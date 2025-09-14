@@ -1,0 +1,35 @@
+{
+  "name": "government-health-mock-server",
+  "version": "1.0.0",
+  "description": "Mock server for government health data, news, and alerts",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:all": "./start.sh",
+    "webhook": "node test-webhook-receiver.js",
+    "vercel:dev": "vercel dev",
+    "build": "echo 'No build step required for Vercel'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "health",
+    "government",
+    "mock",
+    "webhook",
+    "disease",
+    "prevention"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
